@@ -6,7 +6,7 @@ import { Banner } from './Banner';
 import { Dish } from './Dish';
 import { Navbar } from './Navbar';
 import { Loader } from './Loader'
-import './style.scss'
+// import './style.scss';
 import { SkeletonBanner } from './SkeletonBanner';
 export const dataContext = createContext();
 function App() {

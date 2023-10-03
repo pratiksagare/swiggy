@@ -1,0 +1,508 @@
+@font-face {
+    font-family: 'HeadFont';
+    src: url('./BasisGrotesquePro-Black.woff2');
+}
+
+@font-face {
+    font-family: 'NavFont';
+    src: url('./ProximaNovaExtraBold.woff2');
+}
+
+body {
+    // min-width: 900px;
+
+
+    .GrandNav {
+        box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+
+        .Navbar {
+            width: auto;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            // margin: 0rem 3rem;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            // position: relative;
+            margin: 0rem 6rem;
+            // border-bottom: solid 1px rgba(#000, .2);
+            // -webkit-filter: blur(2px);
+            // -webkit-border-image: blur(9px);
+            // background-color: px#fff;
+
+
+            .part1 {
+                display: flex;
+                align-items: center;
+
+                // justify-content:space-evenly !important;
+                .logo {
+                    background-image: url("../public/short_logo.png");
+                    height: 48px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 32px;
+                    cursor: pointer;
+                    transition: transform .1s ease-in;
+
+                    &:hover {
+                        transform: scale(1.10);
+                    }
+                }
+
+                .location {
+                    margin-left: 2rem;
+                    color: #3d4152;
+
+                    .tiny {
+                        font-weight: 550;
+                        font-size: .9rem;
+                        // text-decoration: underline;
+                        // margin-bottom: .3rem;
+                    }
+
+                    &:hover {
+                        color: #fc8019;
+                    }
+                }
+            }
+
+            .part2 {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #3d4152;
+                    margin-right: 3rem;
+                    font-size: .9rem;
+
+                    &:last-child {
+                        margin-right: 0rem;
+                    }
+
+                    .material-symbols-outlined {
+                        font-size: 1.3rem;
+                    }
+
+                    .nav-menu-text {
+                        margin: 0rem 0rem 0rem .5rem;
+                        text-wrap: nowrap;
+                        font-family: 'NavFont',ProximaNova,arial,Helvetica Neue,sans-serif;
+                        font-weight: 400;
+                        // &:last-child {
+                        //     margin: 0;
+                        //     margin-left: 1rem;
+                        // }
+                    }
+
+                    &:hover {
+                        color: #fc8019;
+                    }
+                }
+            }
+        }
+    }
+
+    .marginClass {
+
+        // margin:0rem 3rem;
+        margin: 0rem 6rem;
+
+        .Banner {
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: space-around;
+
+            // margin: 0rem 3rem;
+            margin-top: 2rem;
+
+            .head {
+                .header {
+                    text-wrap: nowrap;
+                    font-weight: 800;
+                    font-family: 'HeadFont', arial;
+                    font-size: 1.5rem;
+                    // color: red;
+                }
+
+                // margin: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                // flex-direction: row;
+
+                .head-btns {
+                    display: flex;
+                    margin-left: auto;
+                    justify-content: space-around;
+                    // flex-direction: row;
+
+                    button {
+                        display: flex;
+                        // flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        padding: .3rem;
+                        border-radius: 100%;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+
+                        // margin-left: auto;
+                        &:last-child {
+                            margin-left: 1rem;
+                        }
+                    }
+
+                }
+            }
+
+            .banners {
+                // margin: 0;
+                display: flex;
+                // width: 100%;
+                height: auto;
+                // gap: 2;
+                // overflow-y: hidden;
+                overflow-y: scroll;
+                scroll-behavior: smooth;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                    transition: scroll 1s ease-in;
+                }
+
+                .CustomBanner {
+                    .bnr {
+                        width: auto;
+                        aspect-ratio: auto 425 / 252;
+                        // height: 250px;
+                        height: 240px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+
+                        // width: 33%;
+                        // height:177px;
+                        // aspect-ratio: 14.5 / 8.5;
+
+                        // aspect-ratio: 16 / 9;
+
+                        // min-width: 420px;
+
+                        margin-right: .85rem;
+                        // height: 240px;
+                    }
+                }
+            }
+        }
+
+        .Dish {
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: space-around;
+
+            // margin: 0rem 3rem;
+            margin-top: 2rem;
+
+            .head {
+                .header {
+                    text-wrap: nowrap;
+                    font-weight: 800;
+                    font-family: 'HeadFont';
+                    font-size: 1.5rem;
+                    // color: red;
+                }
+
+                // margin: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                // flex-direction: row;
+
+                .head-btns {
+                    display: flex;
+                    margin-left: auto;
+                    justify-content: space-around;
+                    // flex-direction: row;
+
+                    button {
+                        display: flex;
+                        // flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        padding: .3rem;
+                        border-radius: 100%;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+
+                        // margin-left: auto;
+                        &:last-child {
+                            margin-left: 1rem;
+                        }
+                    }
+
+                }
+            }
+
+            .Dishes {
+                // margin: 0;
+                display: flex;
+                // width: 100%;
+                height: auto;
+                // gap: 2;
+                // overflow-y: hidden;
+                overflow-y: scroll;
+                scroll-behavior: smooth;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                    transition: scroll 1s ease-in;
+                }
+
+                .CustomDish {
+                    .dishBnr {
+                        width: 144px;
+                        aspect-ratio: auto 144 / 180;
+                        height: 180px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        mix-blend-mode: multiply;
+
+                        // width: 33%;
+                        // height:177px;
+                        // aspect-ratio: 14.5 / 8.5;
+
+                        // aspect-ratio: 16 / 9;
+
+                        // min-width: 420px;
+
+                        margin-right: .85rem;
+                        // height: 240px;
+                    }
+                }
+            }
+        }
+    }
+
+    .Loading {
+        .Loader {
+            background-color: #171a29;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .Loader-msg {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #fff;
+                text-wrap: nowrap;
+                font-size: 1.3rem;
+
+            }
+        }
+
+        
+    }
+    
+    .skeletonBanner {
+        margin: 0rem 6rem;
+        display: flex;
+        width: 100%;
+        height: 240px !important;
+        // gap: 2;
+        // overflow-y: hidden;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            display: none;
+            transition: scroll 1s ease-in;
+        }
+        .SkeletonCustomBanner {
+            height: 240px !important;
+            // width:240px;
+            .skeleton {
+                // width: 200px;
+                // border: 1px solid red;
+                aspect-ratio: auto 425 / 252;
+                height: 250px;
+                // height: 240px !important;
+                background-color: #ddd;
+               
+
+                margin-right: .85rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 855px) {
+
+    // Styles for screens up to 768 pixels wide
+    body {
+        // margin: 0rem 3rem;
+
+        // background-color: lightblue;
+        .GrandNav {
+            // box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+
+            .Navbar {
+                margin: 0rem 3rem;
+
+                .part1 {
+                    display: flex;
+                    justify-content: space-evenly !important;
+
+                    .logo {
+                        margin-right: auto;
+
+
+                    }
+
+                    // .location {
+                    // display:flex;
+                    // justify-content:flex-end;
+                    // margin-right: auto;
+                    // right:0;
+
+                    // margin-left: auto;
+
+                    // text-align: right;
+                    // float: right;
+                    // }
+
+                }
+
+                .part2 {
+                    display: none;
+                    // background-color: #3d4152;
+                }
+            }
+        }
+
+        .marginClass {
+            margin: 0rem 3rem;
+
+            .Banner {
+                .head {
+                    .header {
+                        text-wrap: nowrap;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .banners {
+                    .CustomBanner {
+                        .bnr {
+                            // width: auto;
+                            // aspect-ratio: auto 425 / 252;
+                            height: 240px;
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+            }
+
+            .Dish {
+                .head {
+                    .header {
+                        text-wrap: nowrap;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // You can also nest further media queries if needed
+    @media screen and (max-width: 480px) {
+
+        // Styles for screens up to 480 pixels wide within the previous media query
+        body {
+
+            // background-color: lightcoral;
+            // margin: 0rem 1rem;
+            .GrandNav {
+                .Navbar {
+                    margin: 0rem 1rem;
+                }
+            }
+
+            .marginClass {
+                margin: 0rem 1rem;
+
+                .Banner {
+                    .banners {
+                        .CustomBanner {
+                            .bnr {
+                                // width: auto;
+                                // aspect-ratio: auto 425 / 252;
+                                height: 120px;
+                                margin-right: .5rem;
+                            }
+                        }
+                    }
+                }
+
+                .Dish {
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    // justify-content: space-around;
+
+                    // margin: 0rem 3rem;
+                    margin-top: 2rem;
+
+                    .head {
+                        .header {
+                            text-wrap: nowrap;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            // color: red;
+                        }
+                    }
+
+                    .Dishes {
+                        // margin: 0;
+                        display: flex;
+                        // width: 100%;
+                        height: auto;
+                        // gap: 2;
+                        // overflow-y: hidden;
+                        overflow-y: scroll;
+                        scroll-behavior: smooth;
+
+                        &::-webkit-scrollbar {
+                            display: none;
+                            transition: scroll 1s ease-in;
+                        }
+
+                        .CustomDish {
+                            .dishBnr {
+                                width: auto;
+                                aspect-ratio: auto 144 / 180;
+                                height: 140px;
+                                margin-right: .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

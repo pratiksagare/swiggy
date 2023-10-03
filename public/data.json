@@ -1,0 +1,114 @@
+{
+    "BannersData": [
+        {
+            "banner": "./img/banner3.png",
+            "path": "#"
+        },
+        {
+            "banner": "./img/banner4.png",
+            "path": "#"
+        },
+        {
+            "banner": "./img/banner5.png",
+            "path": "#"
+        },
+        {
+            "banner": "./img/banner6.png",
+            "path": "#"
+        },
+        {
+            "banner": "./img/banner7.png",
+            "path": "#"
+        },
+        {
+            "banner": "./img/banner1.png",
+            "path": "#"
+        },
+        {
+            "banner": "./img/banner2.png",
+            "path": "#"
+        }
+    ],
+    "DishData": [
+        {
+            "image": "./img/Idli.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Dosa.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Vada.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Poori.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Pakodas.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Paratha.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Chole_Bature.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Upma.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Pure_Veg.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Omelette.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Pav_Bhaji.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Cakes.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Pancake.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Khichdi.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/tea.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Coffee.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Burger.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Rolls.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Biryani_2.png",
+            "path": "#"
+        },
+        {
+            "image": "./img/Pizza.png",
+            "path": "#"
+        }
+    ]
+}

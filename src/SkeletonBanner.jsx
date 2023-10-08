@@ -9,8 +9,18 @@ export const SkeletonBanner = () => {
     // }, 2000);
     return (
         <div className="skeletonBanner">
+            <div className="head"></div>
+
+
+
+            <div className="banners">
+                <SkeletonCustomBanner />
+                <SkeletonCustomBanner />
+                <SkeletonCustomBanner />
+                <SkeletonCustomBanner />
+            </div>
             {/* <CustomBanner skeleton={showSkeleton ? true : false} /> */}
-            <SkeletonCustomBanner/>
+            {/* <SkeletonCustomBanner/> */}
         </div>
     )
 }

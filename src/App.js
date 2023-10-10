@@ -9,6 +9,7 @@ import { Loader } from './Loader'
 // import './style.scss'
 // import '../public/style.scss'
 import { SkeletonBanner } from './SkeletonBanner';
+import { SkeletonDish } from './SkeletonDish';
 export const dataContext = createContext();
 function App() {
 
@@ -93,7 +94,10 @@ function App() {
         (loading || showSkeleton) ? (
           <div className='Loading'>
             {loading && <Loader/>}
-            {showSkeleton && <SkeletonBanner/>}
+            {showSkeleton && <div>
+              <SkeletonBanner/>
+              <SkeletonDish/>
+              </div>}
           </div>
         ):(
           <div className='marginClass'>

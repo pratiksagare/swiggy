@@ -14,11 +14,18 @@
     }
 }
 
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 :root {
     --card-margin: 10px;
     --total-margin: calc(2 * var(--card-margin));
     /* Account for margins on both sides of each card */
     --card-width: calc((100% - var(--total-margin)) / 3);
+    // width: calc();
     /* Calculate card width */
 }
 
@@ -196,8 +203,8 @@ body {
 
                 .CustomBanner {
                     width: var(--card-width);
-                    aspect-ratio: auto 425 / 252;
-
+                    // aspect-ratio: auto 425 / 252;
+                    margin-right: .85rem;
                     .bnr {
                         width: auto;
                         aspect-ratio: auto 425 / 252;
@@ -215,11 +222,8 @@ body {
 
                         // min-width: 420px;
 
-                        margin-right: .85rem;
+                        
                         // height: 240px;
-&:last-child{
-margin-right:0rem;
-}
                     }
                 }
             }
@@ -318,18 +322,44 @@ margin-right:0rem;
     }
 
     .Loading {
-        transition: 2s ease-in;
-
+        // transition: 2s ease-in;
+// display: flex;
+// align-items: center;
+// justify-content: center;
         .Loader {
             transition: 2s ease-in;
             background-color: #171a29;
             height: 400px;
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            .loading-circle{
+                // position: relative;
+                position: relative;
+                // overflow: hidden;
+                display: inline-block;
+                .loader-circle {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border: 4px solid transparent;
+                    border-top-color: #fff; /* Loader color */
+                    border-radius: 50%;
+                    
+                    animation: rotate 1s linear infinite;
+                    box-sizing: border-box;
+                  }
+                img{
+                    margin: 1rem;
+                    // position: absolute;
+                    width: 75px;
+                    height: 75px;
+                }
+            }
             .Loader-msg {
+                margin-top: .5rem;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color: #fff;
                 text-wrap: nowrap;
@@ -515,7 +545,7 @@ margin-right:0rem;
 // }
 
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 769px) {
 
     // Styles for screens up to 768 pixels wide
     body {
@@ -573,12 +603,16 @@ margin-right:0rem;
 
                 .banners {
                     .CustomBanner {
+                        width: calc((100% - var(--total-margin)) / 2);
+                        // &:last-child{
+                        //     margin-right: 0rem;
+                        // }
                         .bnr {
                             // width: var(--card-width);
                             // width: calc();
                             aspect-ratio: auto 425 / 252;
                             // height: 240px;
-                            margin-right: .5rem;
+                            // margin-right: .5rem;
                         }
                     }
                 }
@@ -598,7 +632,29 @@ margin-right:0rem;
         .Loading {
             .Loader {
                 height: 300px;
-
+                .loading-circle{
+                    // // position: relative;
+                    // position: relative;
+                    // // overflow: hidden;
+                    // display: inline-block;
+                    .loader-circle {
+                        // position: absolute;
+                        // width: 100%;
+                        // height: 100%;
+                        // border: 4px solid transparent;
+                        // border-top-color: #fff; /* Loader color */
+                        // border-radius: 50%;
+                        
+                        // animation: rotate 1s linear infinite;
+                        // box-sizing: border-box;
+                      }
+                    img{
+                        // margin: 1rem;
+                        // position: absolute;
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
                 .Loader-msg {
                     font-size: 1.1rem;
                 }
@@ -664,7 +720,7 @@ margin-right:0rem;
     }
 
     // You can also nest further media queries if needed
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
 
         // Styles for screens up to 480 pixels wide within the previous media query
         body {
@@ -683,6 +739,9 @@ margin-right:0rem;
                 .Banner {
                     .banners {
                         .CustomBanner {
+                            &:last-child{
+                                margin-right: 0;
+                            }
                             .bnr {
                                 width: calc(100vw - 2rem);
                                 // aspect-ratio: auto 425 / 252;
@@ -760,8 +819,8 @@ margin-right:0rem;
                     .head {
                         background-color: #ddd;
                         border-radius: .3rem;
-                        width: 1500 px;
-                        height: 33.5px;
+                        // width: 1500 px;
+                        height: 25px;
                         // margin-bottom: 1.5rem;
                     }
 
@@ -771,8 +830,9 @@ margin-right:0rem;
 
                             .skeleton {
                                 // border: 1px solid red;
-                                height: 120px;
+                                width: calc(100vw - 2rem);
                                 margin-right: .5rem;
+                                
                             }
                         }
                     }
@@ -811,7 +871,7 @@ margin-right:0rem;
                 }
             }
         }
-        @media screen and (max-width: 321px) {
+        @media screen and (max-width: 376px) {
             body {
                 .marginClass {
                     margin: 0rem 1rem;
@@ -835,8 +895,76 @@ margin-right:0rem;
 
 
                 }
+                .Loading {
+                    .Loader {
+                        height: 220px;
+    
+                        .Loader-msg {
+                            font-size: .9rem;
+                        }
+                    }
+    
+                    .skeletonBanner {
+                        margin: 0rem 1rem;
+                        margin-top: 2rem;
+    
+                        .head {
+                            background-color: #ddd;
+                            border-radius: .3rem;
+                            width: 1500 px;
+                            height: 33.5px;
+                            // margin-bottom: 1.5rem;
+                        }
+    
+                        .banners {
+                            .SkeletonCustomBanner {
+    
+    
+                                .skeleton {
+                                    // border: 1px solid red;
+                                    width: calc(100vw - 2rem);
+                                    margin-right: .5rem;
+                                    height: 200px;
+                                }
+                            }
+                        }
+                    }
+    
+                    .SkeletonDish {
+                        margin: 0rem 1rem;
+                        margin-top: 3rem;
+                        // display: flex;
+                        // width: 100%;
+                        // height: 240px;
+                        // gap: 2;
+                        // overflow-y: hidden;
+                        // transition: 2ms ease-in;
+    
+                        .head {
+                            // background-color: #ddd;
+                            // border-radius: .3rem;
+                            width: 175px;
+                            // height: 33.5px;
+                            // margin-bottom: 1.5rem;
+                        }
+    
+                        .Dishes {
+                            // display: flex;
+                        }
+    
+                        .SkeletonCustomDish {
+                            .Dish {
+                                width: auto;
+                                aspect-ratio: auto 144/180;
+                                height: 120px;
+                                margin-right: .5rem;
+                            }
+                        }
+                    }
+                }
 
             }
+
         
         @media screen and (max-width: 321px) {
             body {
@@ -845,7 +973,13 @@ margin-right:0rem;
 
                     .Banner {
                         .banners {
+                            // &:last-child{
+                            //     margin-right: 0;
+                            // }
                             .CustomBanner {
+                                &:last-child{
+                                    margin-right: 0;
+                                }
                                 .bnr {
                                     width: calc(100vw - 2rem);
                                     // aspect-ratio: auto 425 / 252;
@@ -854,6 +988,7 @@ margin-right:0rem;
                                     // overflow: hidden;
                                     height: 200px;
                                     // margin-right: .5rem;
+                                    
                                 }
                             }
                         }

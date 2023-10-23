@@ -5,9 +5,9 @@ export const Navbar = () => {
                 <div className="part1">
                     <div className="logo"></div>
 
-                    <div className="location">
+                    {/* <div className="location">
                         <span className="tiny underline">Tathawade</span>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="part2">

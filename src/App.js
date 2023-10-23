@@ -10,6 +10,7 @@ import { Loader } from './Loader'
 // import '../public/style.scss'
 import { SkeletonBanner } from './SkeletonBanner';
 import { SkeletonDish } from './SkeletonDish';
+import { CustomLine } from './CustomLine';
 export const dataContext = createContext();
 function App() {
 
@@ -105,6 +106,7 @@ function App() {
             <dataContext.Provider value={{ data, setData }}>
               <Banner />
               <Dish />
+              <CustomLine/>
             </dataContext.Provider>
 
           </div>
